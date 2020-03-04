@@ -26,7 +26,7 @@ public class clientFileTransferThread implements Runnable{
 		
 		InetAddress localIP = convoSocket.getLocalAddress();
 		int localPort = convoSocket.getLocalPort();
-		String ack = "Ack ack bitch";
+		String ack = "Ack ack";
 		sendFile = new fileTransfer();
 		sendFile.setFile(ack);
 		sendFile.setIP(localIP);

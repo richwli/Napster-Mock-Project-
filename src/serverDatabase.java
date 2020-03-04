@@ -25,6 +25,7 @@ public class serverDatabase {
 		ConcurrentHashMap<String,fileTransfer> database = new ConcurrentHashMap<String,fileTransfer>(); 
 		ConcurrentHashMap<String,fileTransfer> clientFileTransferMap = new ConcurrentHashMap<String,fileTransfer>();
 		
+		//Processes requests from clients through receiv. fileTransfers
 		while(true){
 			fileTransfer inData = serverConnection.openPacket();
 			System.out.println("\n(ServerDatabase Side)");
@@ -38,15 +39,13 @@ public class serverDatabase {
 				System.out.println( "(Key-Sleep) oldValue is: " ); oldValue.prettyPrint() ;
 				System.out.println( "(Key-Sleep) inData.getTypeSetter is: "+inData.getTypeSetter() +"\n");
 				
-				clientFileTransferMap.replace(inData.getName(),oldValue,inData); //ERROR OCCURRING AFTER HERE!!!
+				clientFileTransferMap.replace(inData.getName(),oldValue,inData); 
 			}
 			//Adds incoming packet into map for processing
 			System.out.println(inData.getTypeSetter()+" added to Hashmap!!!");
 			
+			//Spawns new thread for each handshake thread.
 			if(typeSetterContent(inData.getTypeSetter()).equals("CLIENT_SERVER_HANDSHAKE")){
-				/*
-				 * Spawns new thread for each handshake thread.
-				 */
 				int threadPort = ThreadLocalRandom.current().nextInt(1024,49152);
 				System.out.println("New user here!!! Address is "+ inData.getIP()+ " Port is "+inData.getPort()+"\n");
 				serverUtils threadConnection = new serverUtils(threadPort);

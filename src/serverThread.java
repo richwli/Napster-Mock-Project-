@@ -50,7 +50,7 @@ public class serverThread implements Runnable{
 		fileTransfer inData; //data received from client 
 		fileTransfer outData = null;  //data sent back to client
 		
-		// Thread to ping client incase of spurious shutdowns
+		// Thread to ping client in-case of spurious shutdowns
 		//Thread pingThread = new Thread(new serverPingThread(connection.getClientSocketAddress()));
 		//pingThread.start();
 		

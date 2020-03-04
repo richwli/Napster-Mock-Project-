@@ -1,0 +1,30 @@
+[33mcommit 9ef0360056a910b54b3c6a1042843d594c3045fd[m[33m ([m[1;36mHEAD -> [m[1;32mmaster[m[33m, [m[1;31mmockster/master[m[33m)[m
+Author: Richard Li <liaxb@bc.edu>
+Date:   Tue Mar 3 21:07:46 2020 -0500
+
+    Update README.md
+
+[33mcommit 5036f7dd9c04755f146aa1e7512da63c0310aa16[m
+Author: Richard Li <liaxb@bc.edu>
+Date:   Tue Mar 3 21:06:22 2020 -0500
+
+    Update README.md
+
+[33mcommit c3405a78dfce52b567c14356e4f6a4db5eed5c5b[m
+Merge: 90824a3 2b457da
+Author: Richard L <liaxb@bc.edu>
+Date:   Tue Mar 3 19:19:44 2020 -0500
+
+    Merge branch 'master' of https://github.com/richwli/Napster-Mock-Project-
+
+[33mcommit 90824a300c17c14ffd18dad943389992b5a0d6a6[m
+Author: Richard L <liaxb@bc.edu>
+Date:   Tue Mar 3 19:15:56 2020 -0500
+
+    Initial commit of all existing files
+
+[33mcommit 2b457da4a1d25354780c6d1ab67a7f441ebc3841[m
+Author: Richard Li <liaxb@bc.edu>
+Date:   Sun Mar 1 19:02:43 2020 -0500
+
+    Initial commit
