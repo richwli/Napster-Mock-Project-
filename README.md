@@ -2,7 +2,8 @@
 A simple version of the Napster software created within vanilla Java. 
 (On hiatus)
 
-FILES FINISHED:
+FILES FINISHED: 
+
 client1-3: used as the interface menu for the user. Relies on cmd commands as inputs. 
 - Multiple client files are utilized in order to test simultaneous server receiving multiple, different requests from clients simultaneously
 - Initializes threadpools used for p2p and client-server interaction
@@ -31,6 +32,7 @@ serverThread: Threads used by serverDatabase to communicate with each client
 serverUtils: Basic server-side functions and data for socket programming
 
 FILES WORK IN PROGRESS:
+
 clientStatistics: Object accessed only by the server that holds user statistics in application
 - Used to designate ratings based on user statistics. Ratings determine the most 'dependable' clients for p2p file transfers.
 - Statistics are read and maintained by the server to ensure fair ratings between users
